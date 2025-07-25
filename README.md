@@ -16,6 +16,8 @@ __  _  ____ _________  _____ |  | _____    ____    ____
                            \/          \/     \//_____/  
 ```
 
+A little programming language I made because im REAALLLYY BOOOREEED. It's like if Python + Javascript had a baby, then the baby is this ABOMINATION.
+
 ## Setup and Usage
 
 Installation:
