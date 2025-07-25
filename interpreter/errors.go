@@ -5,7 +5,7 @@ package interpreter
 import (
 	"fmt"
 
-	. "github.com/benhoyt/littlelang/tokenizer"
+	. "wurmerlang/lang/tokenizer"
 )
 
 // Error is the error type returned by Evaluate and Execute. Each error holds

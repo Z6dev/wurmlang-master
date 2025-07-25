@@ -1125,7 +1125,7 @@ func execute(program) {
 }
 
 if len(_args) == 0 {
-    print("usage: littlelang littlelang.ll source_filename")
+    print("usage: ./lang wurmerlang.ll source_filename")
     exit(1)
 }
 source = read(_args[0])

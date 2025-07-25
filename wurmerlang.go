@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/benhoyt/littlelang/interpreter"
-	"github.com/benhoyt/littlelang/parser"
-	"github.com/benhoyt/littlelang/tokenizer"
+	"wurmerlang/lang/interpreter"
+	"wurmerlang/lang/parser"
+	"wurmerlang/lang/tokenizer"
 )
 
 // Show the source line and position of a parser or interpreter error

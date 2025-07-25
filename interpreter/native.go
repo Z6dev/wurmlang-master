@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"reflect"
 
-	. "github.com/benhoyt/littlelang/tokenizer"
+	. "wurmerlang/lang/tokenizer"
 )
 
 type nativeFunction struct {

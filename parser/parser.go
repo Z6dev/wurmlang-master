@@ -2,14 +2,13 @@
 //
 // You can parse a single expression with ParseExpression(), or an entire
 // program with ParseProgram().
-//
 package parser
 
 import (
 	"fmt"
 	"strconv"
 
-	. "github.com/benhoyt/littlelang/tokenizer"
+	. "wurmerlang/lang/tokenizer"
 )
 
 // Error is the error type returned by ParseExpression and ParseProgram when
@@ -75,8 +74,9 @@ func (p *parser) statements(end Token) Block {
 
 // statement = if | while | for | return | func | assign | expression
 // assign    = NAME ASSIGN expression |
-//             call subscript ASSIGN expression |
-//             call dot ASSIGN expression
+//
+//	call subscript ASSIGN expression |
+//	call dot ASSIGN expression
 func (p *parser) statement() Statement {
 	switch p.tok {
 	case IF:
@@ -115,8 +115,9 @@ func (p *parser) block() Block {
 }
 
 // if = IF expression block |
-//      IF expression block ELSE block |
-//      IF expression block ELSE if
+//
+//	IF expression block ELSE block |
+//	IF expression block ELSE if
 func (p *parser) if_() Statement {
 	pos := p.pos
 	p.expect(IF)
@@ -166,7 +167,8 @@ func (p *parser) return_() Statement {
 }
 
 // func = FUNC NAME params block |
-//        FUNC params block
+//
+//	FUNC params block
 func (p *parser) func_() Statement {
 	pos := p.pos
 	p.expect(FUNC)
@@ -185,7 +187,8 @@ func (p *parser) func_() Statement {
 }
 
 // params = LPAREN RPAREN |
-//          LPAREN NAME (COMMA NAME)* ELLIPSIS? COMMA? RPAREN |
+//
+//	LPAREN NAME (COMMA NAME)* ELLIPSIS? COMMA? RPAREN |
 func (p *parser) params() ([]string, bool) {
 	p.expect(LPAREN)
 	params := []string{}
@@ -282,7 +285,9 @@ func (p *parser) negative() Expression {
 
 // call      = primary (args | subscript | dot)*
 // args      = LPAREN RPAREN |
-//             LPAREN expression (COMMA expression)* ELLIPSIS? COMMA? RPAREN)
+//
+//	LPAREN expression (COMMA expression)* ELLIPSIS? COMMA? RPAREN)
+//
 // subscript = LBRACKET expression RBRACKET
 // dot       = DOT NAME
 func (p *parser) call() Expression {
@@ -334,8 +339,9 @@ func (p *parser) call() Expression {
 }
 
 // primary = NAME | INT | STR | TRUE | FALSE | NIL | list | map |
-//           FUNC params block |
-//           LPAREN expression RPAREN
+//
+//	FUNC params block |
+//	LPAREN expression RPAREN
 func (p *parser) primary() Expression {
 	switch p.tok {
 	case NAME:
@@ -392,7 +398,8 @@ func (p *parser) primary() Expression {
 }
 
 // list = LBRACKET RBRACKET |
-//        LBRACKET expression (COMMA expression)* COMMA? RBRACKET
+//
+//	LBRACKET expression (COMMA expression)* COMMA? RBRACKET
 func (p *parser) list() Expression {
 	pos := p.pos
 	p.expect(LBRACKET)
@@ -416,8 +423,9 @@ func (p *parser) list() Expression {
 }
 
 // map = LBRACE RBRACE |
-//       LBRACE expression COLON expression
-//              (COMMA expression COLON expression)* COMMA? RBRACE
+//
+//	LBRACE expression COLON expression
+//	       (COMMA expression COLON expression)* COMMA? RBRACE
 func (p *parser) map_() Expression {
 	pos := p.pos
 	p.expect(LBRACE)

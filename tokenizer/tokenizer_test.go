@@ -8,7 +8,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	. "github.com/benhoyt/littlelang/tokenizer"
+	. "wurmerlang/lang/tokenizer"
 )
 
 type Info struct {

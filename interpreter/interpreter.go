@@ -2,7 +2,6 @@
 //
 // To interprete source code, you must first call parser.ParseExpression()
 // or parser.ParseProgram(), and then call Evaluate or Execute, respectively.
-//
 package interpreter
 
 import (
@@ -11,8 +10,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/benhoyt/littlelang/parser"
-	. "github.com/benhoyt/littlelang/tokenizer"
+	"wurmerlang/lang/parser"
+	. "wurmerlang/lang/tokenizer"
 )
 
 // Value is a littlelang runtime value (nil, bool, int, str, list, map, func).
@@ -131,7 +130,7 @@ func evalIn(pos Position, l, r Value) Value {
 	switch r := r.(type) {
 	case string:
 		if l, ok := l.(string); ok {
-			return Value(strings.Index(r, l) >= 0)
+			return Value(strings.Index(r, l))
 		}
 		panic(typeError(pos, "in str requires str on left side"))
 	case *[]Value:

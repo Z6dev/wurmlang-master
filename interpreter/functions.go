@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/benhoyt/littlelang/parser"
-	. "github.com/benhoyt/littlelang/tokenizer"
+	"wurmerlang/lang/parser"
+	. "wurmerlang/lang/tokenizer"
 )
 
 type functionType interface {
