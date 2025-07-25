@@ -8,7 +8,7 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	. "wurmerlang/lang/tokenizer"
+	. "github.com/Z6dev/wurmlang-master/wurmerlang/lang/tokenizer"
 )
 
 type Info struct {

@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"wurmerlang/lang/parser"
-	. "wurmerlang/lang/tokenizer"
+	"github.com/Z6dev/wurmlang-master/wurmerlang/lang/parser"
+	. "github.com/Z6dev/wurmlang-master/wurmerlang/lang/tokenizer"
 )
 
 type functionType interface {

@@ -10,8 +10,8 @@ import (
 	"os"
 	"strings"
 
-	"wurmerlang/lang/parser"
-	. "wurmerlang/lang/tokenizer"
+	"github.com/Z6dev/wurmlang-master/wurmerlang/lang/parser"
+	. "github.com/Z6dev/wurmlang-master/wurmerlang/lang/tokenizer"
 )
 
 // Value is a littlelang runtime value (nil, bool, int, str, list, map, func).

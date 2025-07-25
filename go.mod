@@ -1,4 +1,4 @@
-module wurmerlang/lang
+module github.com/Z6dev/wurmlang-master/wurmerlang/lang
 
 go 1.24.5
 

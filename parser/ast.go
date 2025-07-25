@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	. "wurmerlang/lang/tokenizer"
+	. "github.com/Z6dev/wurmlang-master/wurmerlang/lang/tokenizer"
 )
 
 type Program struct {

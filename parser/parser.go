@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strconv"
 
-	. "wurmerlang/lang/tokenizer"
+	. "github.com/Z6dev/wurmlang-master/wurmerlang/lang/tokenizer"
 )
 
 // Error is the error type returned by ParseExpression and ParseProgram when

@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"reflect"
 
-	. "wurmerlang/lang/tokenizer"
+	. "github.com/Z6dev/wurmlang-master/wurmerlang/lang/tokenizer"
 )
 
 type nativeFunction struct {

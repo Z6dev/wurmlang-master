@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"testing"
 
-	"wurmerlang/lang/parser"
+	"github.com/Z6dev/wurmlang-master/wurmerlang/lang/parser"
 )
 
 func TestParseExpression(t *testing.T) {
