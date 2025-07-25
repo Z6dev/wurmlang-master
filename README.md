@@ -104,7 +104,7 @@ wurmerlang does not have `break` or `continue`, but you can `return value` as on
 
 ### For loops
 
-For loops are similar to Python's `for` loops and Go's `for range` loops. You can iterate through the (Unicode) characters in a string, elements in a list (the `range()` builtin returns a list), and keys in a map.
+For loops are similar to Python's `for` loops. You can iterate through the (Unicode) characters in a string, elements in a list (the `range()` builtin returns a list), and keys in a map.
 
 Note that iteration order of a map is undefined -- create a list of keys and `sort()` if you need that.
 
@@ -142,7 +142,7 @@ for k in map {
 
 ### Functions and return
 
-You can define named or anonymous functions, including functions inside functions that reference outer variables (closures). Vararg functions are supported with `...` syntax like in Go.
+You can define named or anonymous functions, including functions inside functions that reference outer variables (closures). Vararg functions are supported with `...` syntax like in Javascript.
 
 ```
 func add(a, b) {
