@@ -4,6 +4,21 @@
 _Im too lazy rn_
 so here are the syntax:
 
+
+ .____   __      __   ____.                              
+ |   _| /  \    /  \ |_   |                              
+ |  |   \   \/\/   /   |  |                              
+ |  |    \        /    |  |                              
+ |  |_    \__/\  /    _|  |                              
+ |____|        \/    |____|                              
+                             .__                         
+__  _  ____ _________  _____ |  | _____    ____    ____  
+\ \/ \/ /  |  \_  __ \/     \|  | \__  \  /    \  / ___\ 
+ \     /|  |  /|  | \/  Y Y  \  |__/ __ \|   |  \/ /_/  >
+  \/\_/ |____/ |__|  |__|_|  /____(____  /___|  /\___  / 
+                           \/          \/     \//_____/  
+
+
 ## Language spec
 
 wurmerlang's syntax is a cross between Go and Python. Like Go, it uses `func` to define functions (named or anonymous), requires `{` and `}` for blocks, and doesn't need semicolons. But like Python, it uses keywords for `and` and `or` and `in`. Like both those languages, it distinguishes expressions and statements.
