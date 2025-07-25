@@ -36,6 +36,6 @@ func Person(name, age) {
     return self
 }
 p = Person("Bob", 42)
+j = Person("Serial Model J", 22)
 print(p.str())
-// Output:
-// Bob, aged 42
+print(j.str())
