@@ -1,9 +1,6 @@
 # wurmerlang Interpreter
 ===========================
 
-_Im too lazy rn_
-so here are the syntax:
-
 ```
  .____   __      __   ____.                              
  |   _| /  \    /  \ |_   |                              
@@ -19,9 +16,27 @@ __  _  ____ _________  _____ |  | _____    ____    ____
                            \/          \/     \//_____/  
 ```
 
+## Setup and Usage
+
+Installation:
+```
+git clone https://github.com/Z6dev/wurmlang-master.git
+go build
+```
+Usage:
+```
+.\lang [path to program relative to lang executable]
+```
+
+Building:
+```
+go build
+```
+Optionally, you can add a ``-o`` flag to rename the binary to something else
+
 ## Language spec
 
-wurmerlang's syntax is a cross between Go and Python. Like Go, it uses `func` to define functions (named or anonymous), requires `{` and `}` for blocks, and doesn't need semicolons. But like Python, it uses keywords for `and` and `or` and `in`. Like both those languages, it distinguishes expressions and statements.
+wurmerlang's syntax is a cross between Javascript and Python. Like Javascript, it uses `func` to define functions (named or anonymous), requires `{` and `}` for blocks, and doesn't need semicolons. But like Python, it uses keywords for `and` and `or` and `in`. Like both those languages, it distinguishes expressions and statements.
 
 It's dynamically typed and garbage collected, with the usual data types: nil, bool, int, str, list, map, and func. There are also several builtin functions.
 
