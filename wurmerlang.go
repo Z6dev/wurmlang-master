@@ -32,7 +32,7 @@ func showErrorSource(source []byte, pos tokenizer.Position, dividerLen int) {
 
 func main() {
 	if len(os.Args) < 2 || (os.Args[1] == "-stats" && len(os.Args) < 3) {
-		fmt.Printf("usage: littlelang [-stats] source_filename\n")
+		fmt.Printf("usage: ./lang [-stats] source_filename\n")
 		os.Exit(1)
 	}
 	showStats := false
